@@ -1,4 +1,4 @@
-/*This is the CSS for the modal*/
+/*This is the CSS page for the modal*/
 .outerLightBox{
     background-color: rgba(0,0,0,0.7);
     position: absolute;
@@ -16,7 +16,7 @@ img{
     margin-top: 120px;
     display: block;
 }
-
+/*This is the code for the text beneath the images. I made the font color white and the size larger, for visibility purposes.*/
 #text1{
 	color: #fff;
 	text-align: center;
