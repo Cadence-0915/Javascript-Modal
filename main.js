@@ -16,8 +16,8 @@ else{
 	}
 });
 
-$(".outerLightBox").on("click",function(x){
-	x.preventDefault();
+$(".outerLightBox").on("click",function(e){
+	e.preventDefault();
 	$(".outerLightBox").hide();
 	$("#text1").css("margin", "0px");
 });
