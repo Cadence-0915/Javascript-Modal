@@ -16,13 +16,13 @@ else if ($(this).attr("src") == "hotel_beaubourg.jpg"){
 // Line 19 is the text that will show up if one or both of the images do not show up for any reason.
 else{
 	$("img").hide();
-	$("#text1").text("Welcome!");
+	$("#text1").text("No images found");
 	$("#text1").css({"margin":"300px"});
 	}
 });
 
-// This is the code to let the user close the image by clicking anywhere within the window of the website, including on the pictures themselves. 
-$(".outerLightBox").on("click",function(e){
+// This is the code to let the user close the image. By placing the X button inside the lightbox, it remains hidden until the user chooses to show the image. The outerLightBox will be hidden once the button is clicked. 
+$("#close").on("click",function(e){
 	e.preventDefault();
 	$(".outerLightBox").hide();
 	$("#text1").css("margin", "0px");
